@@ -1,0 +1,143 @@
+@font-face	{
+	font-family: "SFNS Thin";
+	src: url("system_san_francisco_display_thin-webfont.woff");
+}
+
+@font-face	{
+	font-family: "SFNS";
+	src: url("system_san_francisco_display_regular-webfont.woff");
+}
+
+@font-face	{
+	font-family: "SFNS";
+	src: url("system_san_francisco_display_bold-webfont.woff");
+	font-weight: bold;
+}
+@font-face	{
+	font-family: "SFNS Ultrathin";
+	src: url("system_san_francisco_display_ultralight-webfont.woff");
+}
+
+
+body { 
+		color:#ffffff;
+		background-image: url('back.png');
+		background-repeat: repeat-y;
+		background-size:cover;
+	}
+
+#wrapper {
+	position: absolute;
+	margin: auto;
+	top: 0px;
+	bottom:100px;
+    left: 0px;
+    right: 0px;
+	width: 800px;
+
+}
+
+#time {
+	margin-left:auto;
+    margin-right:auto;
+	text-align: center;
+	font-size: 3.75em;
+	font-family: SFNS Ultrathin;
+}
+
+#datey {
+	position: relative;
+	top: -14px;
+	margin-left:auto;
+    margin-right:auto;
+	text-align: center;
+	font-size: 1.1em;
+	font-family: SFNS;
+}
+
+#searchbox {
+		width: 800px;
+		height: 50px;
+		border: none;
+		border-radius: 2px;
+		outline: none;
+		padding-left: 15px;
+		text-align: left;
+		background-color: white;
+		color: #333;
+		font-size: 12px;
+		font-family: SFNS;
+		display: block;
+		margin: auto;
+	}
+	
+	
+#links {
+	
+	width:960px;
+	top: 140px;
+	/* position:; */
+    display: inline-block;
+}
+	
+}
+	
+#listy{
+	width: 800px;
+	
+}	
+	
+ul {
+	position: relative;
+	width: 20%;
+	margin: auto;
+	padding-top: 50px;
+	list-style-type:none;
+	float:left;
+	font-family: SFNS;
+	padding-left:40px;
+	padding-right:0px;
+	margin-left:0px;
+	margin-right:0px;
+	
+}	
+	
+li {
+	text-align:justify;
+	padding: 5px;
+	height:20px;
+	line-height:20px;
+	
+}	
+	
+	
+a {
+	text-decoration:none;
+	color:#333;
+}
+
+a:hover {
+	text-decoration:underline;
+	color: #ffffff;
+}
+
+
+
+
+
+	
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}

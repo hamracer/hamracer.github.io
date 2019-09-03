@@ -65,6 +65,26 @@
 		/* object-fit: contain; */
 		margin: 5px;
 	}
+
+
+	input {
+		margin-top: 10px;
+		background: none;
+		border-bottom: 1px solid white;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		width: 400px;
+		height: 30px;
+
+	}
+
+
+	input, select, textarea, button { 
+		font-family:inherit;
+		color: inherit;
+		font-size: 1em;
+	}
 	</style>
 </head>
 <body>
@@ -74,7 +94,8 @@
 		</div>
         <!--Your waifu here--> 
 		<div id="rightbox">
-			<div id="title">Welcome to the Internet</div>
+			<div id="title"><input id="searchbox" placeholder="welcome to the internet" type="text" autofocus="true"  autocomplete="true"></input>
+			</div>
 			<div id="time">
 					<script>
 						//document.getElementById("main").innerHTML = Date();
