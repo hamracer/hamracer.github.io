@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"/>
+	<style>
+
+
+	a {
+		border-radius: 5px;
+		color: #FFFFFF;
+		margin: 10px;
+		padding: 3px;
+		text-decoration: none;
+	}
+
+	a:hover {
+		background-color: #263238;
+	}
+
+	body {
+		background-color: #263238;
+		font-family: Source Code Pro, Arial, Helvetica, sans-serif;
+		margin: 40px auto;
+		max-width: 900px;
+	}
+
+	#container {
+		background-color:#37474f;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		margin: 100px;
+		width: 80%;
+		height: 271px;
+	}
+
+	#leftbox {
+		width: 40%;
+		float: left;	
+	}
+
+	#rightbox {
+		margin-left:40%;
+
+
+	}
+
+	#title {
+		color: #FFFFFF;
+		font-size: 1.5em;
+		margin-bottom: 15px;
+		margin-left: 10px;	
+	}
+
+	#time, #datey {
+		color: #FFFFFF;
+		font-size: 1.5em;
+		margin-bottom: 15px;
+		margin-left: 10px;	
+	}
+	img {
+		height: 261px;
+		width: 261px;
+		/* width: 100%; */
+		/* height: 100%; */
+		/* object-fit: contain; */
+		margin: 5px;
+	}
+	</style>
+</head>
+<body>
+    <div id="container">
+		<div id="leftbox">
+			<img id="waifu" src="squaresleep.png">	
+		</div>
+        <!--Your waifu here--> 
+		<div id="rightbox">
+			<div id="title">Welcome to the Internet</div>
+			<div id="time">
+					<script>
+						//document.getElementById("main").innerHTML = Date();
+						function updateClock() {
+							var m = new Date();
+							var timeString =
+							  (("0" + m.getHours()).slice(-2) + ":" +
+							  ("0" + m.getMinutes()).slice(-2) + ":" +
+							  ("0" + m.getSeconds()).slice(-2));
+	
+							// set the content of the element with the ID time to the formatted string
+							document.getElementById('time').innerHTML = timeString;
+							
+							// call this function again in 1000ms
+							setTimeout(updateClock, 1000);
+						};
+						updateClock(); // initial call
+					</script>
+					
+				</div>
+				<div class="datey" id="datey">
+						<script>
+						function updateDate() {
+								var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+								var monthy = ['January','Febuary','March','April','May','June','July','August','September','October','November','December'];
+								var n = new Date();
+							
+								var timeString =
+								(days[ n.getDay() ] + ", " +
+								monthy[n.getMonth() ] + " " +
+								n.getDate());
+								// set the content of the element with the ID time to the formatted string
+								document.getElementById('datey').innerHTML = timeString;
+								
+								// call this function again in 1000ms
+								setTimeout(updateDate, 1000);
+							};
+							updateDate(); // initial call
+		
+						</script>
+						
+		
+						</div>
+			<table>
+			<tbody>
+	            <tr>
+					<td><a href="https://mail.google.com/" target="_blank">gmail</a></td>
+					<td><a href="https://drive.google.com/" target="_blank">drive</a></td>
+					<td><a href="http://4chan.org/vg/" target="_blank">/vg/</a></td>
+					<td><a href="https://www.twitch.tv/directory/all" target="_blank">twitch</a></td>
+				</tr>
+				<tr>
+					<td><a href="https://outlook.live.com/mail/inbox" target="_blank">outlook</a></td>
+					<td><a href="https://github.com/" target="_blank">github</a></td>
+					<td><a href="http://4chan.org/wg/" target="_blank">/wg/</a></td>	
+					<td><a href="http://reddit.com/" target="_blank">reddit</a></td>
+				</tr>
+				<tr>
+					<td><a href="https://docs.google.com/" target="_blank">docs</a></td>
+					<td><a href="https://dashboard.heroku.com/apps" target="_blank">heroku</a></td>
+					<td><a href="http://mangadex.org/" class="clink" >mangadex</a></td>
+					<td><a href="https://www.amazon.com.au/" class="clink" >amazon</a></td>
+					
+
+				</tr>
+				<tr>
+						<td><a href="https://keep.google.com/" target="_blank">keep</a></td>
+						<td><a href="https://www.google.com/maps" target="_blank">maps</a></td>
+						<td><a href="http://nyaa.si/" target="_blank">nyaa</a></td>
+						<td><a href="https://5e.tools/" target="_blank">5etools</a></td>
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+    </div>
+</body>
+</html>
