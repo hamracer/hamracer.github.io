@@ -22,7 +22,7 @@ function search(query){
 			break;
 			
 		
-		case "-g":
+		case "-m":
 			query = query.substr(3);
 			window.location = "https://mail.google.com/mail/u/0/#search/" +
 			query.replaceChars(" ","+");
@@ -31,10 +31,15 @@ function search(query){
 
         case "-y":
             query = query.substr(3);
-            window.location =
-                "https://www.youtube.com/results?search_query=" +
+            window.location ="https://www.youtube.com/results?search_query=" +
                 query.replaceChars(" ", "+");
             break;	
+
+        case "-g":
+            query = query.substr(3)
+            window.location = "https://www.ultimate-guitar.com/search.php?search_type=title&value=" +
+            query.replaceChars(" ", "+");
+
 				
         default:
             window.location="https://www.google.com/#q=" +
